@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { Link, NavLink } from "react-router-dom";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import img from "./../../../public/img/image.png";
 import {
   Avatar,
   Button,
@@ -96,8 +97,9 @@ export function Sidenav({ brandImg, brandName, routes }) {
 }
 
 Sidenav.defaultProps = {
-  brandImg: "/img/logo-ct.png",
-  brandName: "Material Tailwind React",
+  brandImg: "./../../../public/img/image.png",
+  brandName: (
+      <img style={{marginLeft:'50px'}} src={img}/>),
 };
 
 Sidenav.propTypes = {

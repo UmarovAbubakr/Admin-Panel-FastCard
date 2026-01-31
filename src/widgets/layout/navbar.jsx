@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import img from "./../../../public/img/image.png";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -83,7 +84,9 @@ export function Navbar({ brandName, routes, action }) {
 }
 
 Navbar.defaultProps = {
-  brandName: "Material Tailwind React",
+  brandImg: ( 
+    <img src={img}/>
+  ),
   action: (
     <a
       href="https://www.creative-tim.com/product/material-tailwind-dashboard-react"
